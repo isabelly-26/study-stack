@@ -1,0 +1,21 @@
+ul{
+
+
+    
+    list-style-image: url("001.jpg"); height: 5vh; width: 7vh;
+}
+body{
+    background-color: black;
+    color: white;
+}
+<style>
+.img{
+    url("02.jpg"); height: 5vh; width: 7vh;
+
+
+    height: 5vh;
+    width: 7vh;
+    object-fit: cover;
+}
+</style>
+

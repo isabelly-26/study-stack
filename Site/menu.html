@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu lateral</title>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+        body{
+            width: 100;
+            height: 100;
+            background-image: url("paisagem.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <style>
+body{
+   font-family: Arial, Helvetica, sans-serif; 
+   margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(21, 4, 98);
+    padding: 18px; 
+}
+
+.btn-abrir{
+    color: white;
+    font-size 25px;
+}
+
+nav{
+    height: 100%;
+    width: 0px;
+    background-color: rgb(21, 4,98);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+nav a{
+color: white;
+font-size: 25px;
+display: block;
+padding: 12px 10px 12px 32px;
+}
+
+nav a:houver {
+    color:  rgb(21, 4,98);
+    background-color: white;
+}
+
+main{
+    padding: 10px;
+    transition: margin-left 0.5s;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="btn-abrir" onclick="abrirMenu">&#9776; abrir</a>
+    </header>
+    <nav id="menu">
+        <a href="javascript:void(0)" onclick="fecharMenu()">&#215; Fechar</a> <!-- Alterado para chamar função fecharMenu -->
+        <a href="#" >&times; fechar</a>
+        <a href="#">home</a>
+        <a href="#">sobre</a>
+        <a href="#">contato</a>
+        <a href="#">youtube</a>
+            </nav>
+    <main>
+<h1>exemplo de sidenav</h1>
+<p>nesse local fica todo o conteúdo da pagina </p>
+    </main>
+
+<script>
+    function abrirMenu() {
+        document.getElementById('menu').style.width = '250px';
+    }
+
+    function fecharMenu() {
+        document.getElementById('menu').style.width = '0px';
+    }
+</script>
+
+</body>
+</html>
